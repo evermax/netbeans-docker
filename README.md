@@ -31,3 +31,5 @@ docker run -ti --rm \
     --name netbeans \
     dirichlet/netbeans
 ```
+
+This image will use the current directory as the workspace
