@@ -1,5 +1,5 @@
 FROM maven:3.3.3-jdk-8
-MAINTAINER Fabio Rehm "maxlasserre@free.fr"
+MAINTAINER Maxime Lasserre "maxlasserre@free.fr"
 
 ADD state.xml /tmp/state.xml
 
