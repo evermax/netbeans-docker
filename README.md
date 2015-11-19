@@ -1,6 +1,8 @@
 # Netbeans in a container
 
-All credits goes to [Fabio Rehm](https://github.com/fgrehm) for his [repo](https://github.com/fgrehm/docker-netbeans).
+All credits goes to [Fabio Rehm](https://github.com/fgrehm) for his [repo](https://github.com/fgrehm/docker-netbeans) for this image.
+
+For the way to run graphical app within docker you should check the [post](https://blog.jessfraz.com/post/docker-containers-on-the-desktop/) from Jessie Frazelle, along with her [dockerfiles repo](https://github.com/jfrazelle/dockerfiles).
 
 To run this image do the following:
 #### If you are on Linux
