@@ -23,7 +23,7 @@ First use socat (got this from the following [issue](https://github.com/docker/d
 socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"
 ```
 
-Then you can do:
+Then you can do in another terminal:
 ```
 docker run -ti --rm \
     -e DISPLAY=192.168.99.1:0 \
@@ -34,4 +34,16 @@ docker run -ti --rm \
     dirichlet/netbeans
 ```
 
-This image will use the current directory as the workspace
+This image will use the current directory as the workspace.
+
+### Tips
+If you want the plugins to be persisted into the .netbeans-docker folder, you should do the following:
+
+Tools > Plugins > Settings tab
+
+Then in the `Advanced` section of the Settings tab, select `Force install into user directory` in the `Plugin Install Location` selectbox.
+
+
+
+For some reasons on Mac, I didn't managed to make the `Alt+Shift` shortcut works.
+So if you are used to use the `Alt+Shift+O` shortcut to `Go to File...` I would advice to change it to something like `Ctrl+Shift+O`. (You'll have then to change the `Open Project...` shortcut but my guess is that it won't be used as often)
