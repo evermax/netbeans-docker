@@ -4,6 +4,13 @@ All credits goes to [Fabio Rehm](https://github.com/fgrehm) for his [repo](https
 
 For the way to run graphical app within docker you should check the [post](https://blog.jessfraz.com/post/docker-containers-on-the-desktop/) from Jessie Frazelle, along with her [dockerfiles repo](https://github.com/jfrazelle/dockerfiles).
 
+### Notes
+
+The `--volumes-from maven_data` is a trick that works well if you want to store your maven repositories data into a container as well.
+This is a good way to have a good Java development environment that can be easily thrown away when you don't need it anymore.
+If you don't need it for now just omit it, but everytime you will build after starting the container, you will have to download all the dependencies again.
+Check out the maven container and the explanation on the maven data container [here](https://github.com/evermax/maven-docker).
+
 To run this image do the following:
 #### If you are on Linux
 ```
